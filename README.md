@@ -1,5 +1,7 @@
 # My Portfolio
 
+---WORK IN PROGRESS---
+
 Portfolio containing all documentation (and coding in some cases) of major projects I've worked in my career, including those carried out at University and at work.
 For privacy purposes, data is excluded or generated randomly.
 
