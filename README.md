@@ -12,11 +12,8 @@ The Deal Machine is a tool used to evaluate the strength of current deals with o
 - Monthly Player Dashboard (Baybets/Catena)
 Illustrates various player related stats to help the company identify most profitable operators, retention rates and quality of players
 
-- Retention Rates (Ellp)
-Calculate retention rates of users using data obtained from Google Analytics (housed product data)
-
-- Ellp A/B Tests
-Used to evaluate site performance and optimizations
+- Uniblue Typical Funnel
+While at Uniblue I worked a lot on funnels and identifying any potential drops or increases in our funnel, to help the business identify any issues or potential bottlenecks.
 
 University Projects
 - Linear Regression from scratch (without packages)
