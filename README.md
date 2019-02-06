@@ -6,13 +6,13 @@ Portfolio containing all documentation (and coding in some cases) of major proje
 For privacy purposes, data is excluded or generated randomly.
 
 Work Projects
-- Deal Machine (Baybets/Catena)
+- Deal Machine (Baybets/Catena):
 The Deal Machine is a tool used to evaluate the strength of current deals with operators and identify any potential optimizations to increase revenues.
 
-- Monthly Player Dashboard (Baybets/Catena)
+- Monthly Player Dashboard (Baybets/Catena):
 Illustrates various player related stats to help the company identify most profitable operators, retention rates and quality of players
 
-- Uniblue Typical Funnel
+- Uniblue Typical Funnel:
 While at Uniblue I worked a lot on funnels and identifying any potential drops or increases in our funnel, to help the business identify any issues or potential bottlenecks.
 
 University Projects
