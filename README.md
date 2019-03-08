@@ -20,3 +20,4 @@ University Projects
 - Support Vector Regression from scratch (without packages)
 - Predicting Bankruptcy using News Articles and Financial Data
 - Classifying Sportsbook Customers using Gaussian Process Classification
+- Football Game Predictor
