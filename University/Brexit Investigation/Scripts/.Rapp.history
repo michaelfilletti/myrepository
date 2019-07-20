@@ -1,0 +1,527 @@
+write.csv(test, file = "/Users/michaelfilletti/Desktop/testeurusd.csv")
+FinalData
+describe(FinalData$Freq)
+quantile(FinalData$Freq)
+quantile(FinalData$Freq, probs = seq(0, 1, by= 0.1))
+quantile(FinalData$Freq, probs = seq(0, 1, by= 0.05))
+FinalData[FinalData$Freq>5.5,]
+len(FinalData[FinalData$Freq>5.5,])
+nrow(FinalData[FinalData$Freq>5.5,])
+nrow(FinalData[FinalData$Freq>7,])
+FinalData[FinalData$Freq>7,]
+quantile(FinalData$Freq, probs = 0.95)
+int(quantile(FinalData$Freq, probs = 0.95))
+type(quantile(FinalData$Freq, probs = 0.95))
+class(quantile(FinalData$Freq, probs = 0.95))
+j=quantile(FinalData$Freq, probs = 0.95)
+j
+j*2
+top5freq=quantile(FinalData$Freq, probs = 0.95)#
+TFdatelist=FinalData[FinalData$Freq>top5freq,]$Date
+TFdatelist
+for (i in as.character(TFdatelist)){#
+	AbnormalReturns(GBPEUR,i,150,-5,5,30)#
+}
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv33.R")
+for (i in as.character(TFdatelist)){#
+	AbnormalReturns(GBPEUR,i,150,-5,5,30)#
+}
+TFdatelist
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv33.R")
+AbnormalReturns(GBPEUR,"2017-03-29",100,-5,5,30)
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv33.R")
+AbnormalReturns(GBPEUR,"2017-03-29",100,-5,5,30)
+AbnormalReturns(GBPEUR,"2019-03-20",100,-5,5,30)
+TFAR=c("2016-06-20", "2016-06-24", "2016-06-27", "2016-07-01", "2018-12-10", "2019-01-14", "2019-01-23" ,"2019-02-26", "2019-03-20", "2019-03-22")#
+#
+for (i in as.character(TFARdatelist)){#
+	if (i in GBPEUR$Date)){#
+		AbnormalReturns(GBPEUR,i,150,-5,5,30)#
+	}#
+}
+TFAR=c("2016-06-20", "2016-06-24", "2016-06-27", "2016-07-01", "2018-12-10", "2019-01-14", "2019-01-23" ,"2019-02-26", "2019-03-20", "2019-03-22")#
+#
+for (i in as.character(TFARdatelist)){#
+	if (i in GBPEUR$Date){#
+		AbnormalReturns(GBPEUR,i,150,-5,5,30)#
+	}#
+}
+TFAR=c("2016-06-20", "2016-06-24", "2016-06-27", "2016-07-01", "2018-12-10", "2019-01-14", "2019-01-23" ,"2019-02-26", "2019-03-20", "2019-03-22")#
+#
+for (i in as.character(TFARdatelist)){#
+	if (i %in% GBPEUR$Date){#
+		AbnormalReturns(GBPEUR,i,150,-5,5,30)#
+	}#
+}
+TFARdatelist=c("2016-06-20", "2016-06-24", "2016-06-27", "2016-07-01", "2018-12-10", "2019-01-14", "2019-01-23" ,"2019-02-26", "2019-03-20", "2019-03-22")#
+#
+for (i in as.character(TFARdatelist)){#
+	if (i %in% GBPEUR$Date){#
+		AbnormalReturns(GBPEUR,i,150,-5,5,30)#
+	}#
+}
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv33.R")
+TFARdatelist=c("2016-06-20", "2016-06-24", "2016-06-27", "2016-07-01", "2018-12-10", "2019-01-14", "2019-01-23" ,"2019-02-26", "2019-03-20", "2019-03-22")#
+#
+for (i in as.character(TFARdatelist)){#
+	if (i %in% GBPEUR$Date){#
+		AbnormalReturns(GBPEUR,i,150,-5,5,30)#
+	}#
+}
+test=data.frame()
+for (i in as.character(ARdatelist)){#
+	if (i %in% EURUSD $Date){#
+		test=rbind(test,AbnormalReturns(EURUSD,i,150,-5,5,30))#
+	}#
+}
+for (i in as.character(TFARdatelist)){#
+	if (i %in% GBPEUR $Date){#
+		test=rbind(test,AbnormalReturns(GBPEUR,i,150,-5,5,30))#
+	}#
+}
+test
+test=data.frame()
+for (i in as.character(TFARdatelist)){#
+	if (i %in% GBPEUR $Date){#
+		test=rbind(test,AbnormalReturns(GBPEUR,i,150,-5,5,30))#
+	}#
+}
+write.csv(test, file = "/Users/michaelfilletti/Desktop/testtfgbpeur.csv")
+test=data.frame()
+for (i in as.character(TFARdatelist)){#
+	if (i %in% GBPEUR $Date){#
+		test=rbind(test,AbnormalReturns(GBPUSD,i,150,-5,5,30))#
+	}#
+}
+write.csv(test, file = "/Users/michaelfilletti/Desktop/testtfgbpusd.csv")
+test=data.frame()
+for (i in as.character(TFARdatelist)){#
+	if (i %in% EURUSD $Date){#
+		test=rbind(test,AbnormalReturns(EURUSD,i,150,-5,5,30))#
+	}#
+}
+write.csv(test, file = "/Users/michaelfilletti/Desktop/testtfeurusd.csv")
+WCARdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" ,"2018-11-29", "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23")#
+#
+for (i in as.character(WCARdatelist)){#
+	if (i %in% XRPUSD$Date){#
+		AbnormalReturns(XRPUSD,i,150,-5,5,30)#
+	}#
+}
+test=data.frame()
+WCARdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" ,"2018-11-29", "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23")#
+#
+for (i in as.character(WCARdatelist)){#
+	if (i %in% XRPUSD$Date){#
+		test=rbind(test,AbnormalReturns(XRPUSD,i,150,-5,5,30))#
+	}#
+}
+write.csv(test, file = "/Users/michaelfilletti/Desktop/testtfxrpusd.csv")
+test=data.frame()
+WCARdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" ,"2018-11-29", "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23")#
+#
+for (i in as.character(WCARdatelist)){#
+	if (i %in% LTCUSD$Date){#
+		test=rbind(test,AbnormalReturns(LTCUSD,i,150,-5,5,30))#
+	}#
+}
+write.csv(test, file = "/Users/michaelfilletti/Desktop/testtfltcusd.csv")
+test=data.frame()
+WCARdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" ,"2018-11-29", "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23")#
+#
+for (i in as.character(WCARdatelist)){#
+	if (i %in% BTCUSD$Date){#
+		test=rbind(test,AbnormalReturns(BTCUSD,i,150,-5,5,30))#
+	}#
+}
+write.csv(test, file = "/Users/michaelfilletti/Desktop/testtfbtcusd.csv")
+version
+TopicAnalysis(WCARdatelist)
+WCARdatelist
+TopicAnalysis(WCARdatelist)
+TopicAnalysis(ARdatelist)
+ARdatelist
+WCARdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" , "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23")#
+TopicAnalysis(WCARdatelist)
+LDAdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" , "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23","2019-02-26", "2019-03-20", "2019-03-22")#
+TopicAnalysis(LDAdatelist)
+DT <- as.data.table(RawBrexitCounter)#
+BrexitCounter =data.frame(DT[ , lapply(.SD, sum), by = "Date"])#
+#
+#Ordering by date#
+BrexitCounter <- BrexitCounter[order(BrexitCounter$Date),]  #
+#
+#Converting to date type from string#
+BrexitCounter $Date=as.Date(BrexitCounter $Date)#
+#
+#Filling empty dates (for days when we have no Brexit articles published)#
+BrexitCounter<-merge(data.frame(Date= as.Date(min(BrexitCounter $Date):max(BrexitCounter $Date),"1970-01-01")),#
+          BrexitCounter, by = "Date", all = TRUE)#
+BrexitCounter[is.na()] <- 0
+DT <- as.data.table(RawBrexitCounter)#
+BrexitCounter =data.frame(DT[ , lapply(.SD, sum), by = "Date"])#
+#
+#Ordering by date#
+BrexitCounter <- BrexitCounter[order(BrexitCounter$Date),]  #
+#
+#Converting to date type from string#
+BrexitCounter $Date=as.Date(BrexitCounter $Date)#
+#
+#Filling empty dates (for days when we have no Brexit articles published)#
+BrexitCounter<-merge(data.frame(Date= as.Date(min(BrexitCounter $Date):max(BrexitCounter $Date),"1970-01-01")),#
+          BrexitCounter, by = "Date", all = TRUE)#
+BrexitCounter[is.na(BrexitCounter)] <- 0
+BrexitCounter
+test
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv32.R")
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv33.R")
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv34.R")
+FinalData=CurrencyDataClean(GBPEUR) #Select whichever currency you wish
+FinalData
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")
+FinalData=CurrencyDataClean(GBPEUR) #Select whichever currency you wish
+FinalData
+FinalData[ , !("Var1")]
+FinalData[ , !"Var1"]
+FinalData[ , !c("Var1")]
+FinalData[ , names(FinalData)!=c("Var1")]
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")
+FinalData=CurrencyDataClean(GBPEUR) #Select whichever currency you wish
+FinalData
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")
+FinalData=CurrencyDataClean(GBPEUR) #Select whichever currency you wish
+FinalData
+OverallCorrelation(FinalData)
+CumulativeCorrelation(FinalData)
+datelist=WindowCorrelation(FinalData)
+AutoFinalDataCorrelation(FinalData)
+AbnormalReturns(GBPUSD,"2016-06-24",100,-5,5,30)
+LDAdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" , "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23","2019-02-26", "2019-03-20", "2019-03-22")#
+TopicAnalysis(LDAdatelist)
+TopicExtraction("2016-06-24")
+TopicExtraction("2016-06-24",-5,5,2)
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+FinalData=CurrencyDataClean(GBPEUR)
+FinalData
+OverallCorrelation(FinalData)
+CumulativeCorrelation(FinalData)
+datelist=WindowCorrelation(FinalData)
+AutoFinalDataCorrelation(FinalData)
+AbnormalReturns(GBPUSD,"2016-06-24",100,-5,5,30)
+install.packages('Hmisc')
+library(Hmisc)
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+dataset=source("Data/GBPEUR")
+dataset=source("Data/GBPEUR.csv")
+dataset=source("Data/GBPEUR")
+dataset=source("Data/GBPEUR",)
+dataset=read.csv("Data/GBPEUR")
+dataset <- dataset[order(dataset$Date),]  #
+#
+#Select data January 2016 onwards (when news articles first began to appear)#
+dataset <- dataset[as.Date(dataset $Date)>=as.Date('2016-01-01'),]#
+#
+#Converting columns to date#
+BrexitCounter$Date=as.Date(BrexitCounter$Date)#
+dataset$Date= as.Date(dataset$Date)#
+#
+#Obtaining the number of articles per day#
+ArticleCountDF=data.frame(table(BrexitDataToM$Date))#
+ArticleCountDF $Date =as.Date(ArticleCountDF $Var1)#
+#
+#Filling empty dates (for days when we have no Brexit articles published)#
+ArticleCountDF <-merge(data.frame(Date= as.Date(min(ArticleCountDF $Date):max(ArticleCountDF $Date),"1970-01-01")),#
+          ArticleCountDF, by = "Date", all = TRUE)#
+ArticleCountDF[is.na(ArticleCountDF)] <- 0
+ArticleCountDF
+#Order data by date#
+dataset <- dataset[order(dataset$Date),]  #
+#
+#Select data January 2016 onwards (when news articles first began to appear)#
+dataset <- dataset[as.Date(dataset $Date)>=as.Date('2016-01-01'),]#
+#
+#Converting columns to date#
+BrexitCounter$Date=as.Date(BrexitCounter$Date)#
+dataset$Date= as.Date(dataset$Date)#
+#
+#Obtaining the number of articles per day#
+ArticleCountDF=data.frame(table(BrexitDataToM$Date))#
+ArticleCountDF $Date =as.Date(ArticleCountDF $Var1)
+ArticleCountDF
+head(ArticleCountDF)
+head(BrexitCounter)
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+head(BrexitCounter)
+BrexitCounter$Date[1]
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+BrexitCounter$Date[1]
+class(BrexitCounter$Date[1])
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+dataset <- dataset[order(dataset$Date),]  #
+#
+#Select data January 2016 onwards (when news articles first began to appear)#
+dataset <- dataset[as.Date(dataset $Date)>=as.Date('2016-01-01'),]#
+#
+#Converting columns to date#
+#BrexitCounter$Date=as.Date(BrexitCounter$Date) #Is this necessary?#
+dataset$Date= as.Date(dataset$Date)#
+#
+#Obtaining the number of articles per day#
+ArticleCountDF=data.frame(table(BrexitDataToM$Date))#
+colnames(ArticleCountDF)=c("Date","ArticleCount")#
+ArticleCountDF $Date =as.Date(ArticleCountDF $Date)#
+#
+#Filling empty dates (for days when we have no Brexit articles published)#
+ArticleCountDF <-merge(data.frame(Date= as.Date(min(ArticleCountDF $Date):max(ArticleCountDF $Date),"1970-01-01")),#
+          ArticleCountDF, by = "Date", all = TRUE)#
+ArticleCountDF[is.na(ArticleCountDF)] <- 0
+ArticleCountDF
+merge(x = merge(x = dataset, y = data.frame(BrexitCounter), by.x = "Date",by.y="Date"), y = data.frame(ArticleCountDF), by = "Date")
+head(merge(x = merge(x = dataset, y = data.frame(BrexitCounter), by.x = "Date",by.y="Date"), y = data.frame(ArticleCountDF), by = "Date"))
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+CurrencyDataClean(GBPEUR)
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+CurrencyDataClean(GBPEUR)
+FinalData=CurrencyDataClean(GBPEUR) #Select whichever currency you wish
+FinalData
+FinalData$Value
+FinalData$Value[1:nrow(FinalData)-1]
+FinalData$Value-FinalData$Value[1:nrow(FinalData)-1]
+rbind("NA",FinalData$Value[1:nrow(FinalData)-1])
+c("NA",FinalData$Value[1:nrow(FinalData)-1])
+FinalData$Value-c("NA",FinalData$Value[1:nrow(FinalData)-1])
+FinalData$Value[2:nrow(FinalData)]-FinalData$Value[1:nrow(FinalData)-1]
+mikef=FinalData$Value[2:nrow(FinalData)]-FinalData$Value[1:nrow(FinalData)-1]
+suec=(FinalData$Value-lag(FinalData$Value,1))
+mikef==suec
+mikef2
+mikef
+suec
+mikef=c("NA",FinalData$Value[2:nrow(FinalData)]-FinalData$Value[1:nrow(FinalData)-1])
+mikef==suec
+laggeddata=FinalData$Value[1:nrow(FinalData)-1]#
+FinalData$Change=c("NA",FinalData$Value[2:nrow(FinalData)]-laggeddata)#
+FinalData$ValuePctChange=FinalData$Change/laggeddata
+FinalData$Change
+FinalData$Change=c(NA,FinalData$Value[2:nrow(FinalData)]-laggeddata)
+FinalData$Change
+laggeddata=FinalData$Value[1:nrow(FinalData)-1]#
+FinalData$Change=c(NA,FinalData$Value[2:nrow(FinalData)]-laggeddata)#
+FinalData$ValuePctChange=FinalData$Change/laggeddata
+len(laggeddata)
+laggeddata=c(NA,FinalData$Value[1:nrow(FinalData)-1])#
+FinalData$Change=FinalData$Value-laggeddata#
+FinalData$ValuePctChange=FinalData$Change/laggeddata
+head(FinalData)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+OverallCorrelation(FinalData)#
+CumulativeCorrelation(FinalData)#
+WindowCorrelation(FinalData)#
+AutoFinalDataCorrelation(FinalData)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+OverallCorrelation(FinalData)#
+CumulativeCorrelation(FinalData)#
+WindowCorrelation(FinalData)#
+AutoFinalDataCorrelation(FinalData)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+OverallCorrelation(FinalData)#
+CumulativeCorrelation(FinalData)#
+WindowCorrelation(FinalData)#
+AutoFinalDataCorrelation(FinalData)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+AbnormalReturns(GBPUSD,"2016-06-24",100,-5,5,30)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+AbnormalReturns(GBPUSD,"2016-06-24",100,-5,5,30)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+AbnormalReturns(GBPUSD,"2016-06-24",100,-5,5,30)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+AbnormalReturns(GBPUSD,"2016-06-24",100,-5,5,30)
+AbnormalReturns(GBPEUR,"2016-06-24",100,-5,5,30)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+AbnormalReturns(GBPEUR,"2016-06-24",100,-5,5,30)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+AbnormalReturns(GBPEUR,"2016-06-24",100,-5,5,30)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+TopicExtraction("2016-06-24")
+TopicExtraction('2016-06-24',-5,5,2)
+TopicAnalysis(LDAdatelist)
+LDAdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" , "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23","2019-02-26", "2019-03-20", "2019-03-22")#
+TopicAnalysis(LDAdatelist)
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+OverallCorrelation(FinalData)#
+CumulativeCorrelation(FinalData)#
+WindowCorrelation(FinalData)#
+AutoFinalDataCorrelation(FinalData)
+FinalData
+ggplot(data=FinalData[,c('Date','ArticleCount')],aes(x=Date, y=ArticleCount))+geom_line() + labs(title = "Brexit Articles published by the Times of Malta")+xlab("Time")+ylab("Articles Published")
+ggplot(data=FinalData[,c('Date','WordCount')],aes(x=Date, y= WordCount))+geom_line() + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Time")+ylab("Articles Published")
+ggplot(data=FinalData[,c('Date','WordCount')],aes(x=Date, y= WordCount))+geom_line() + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Time")+ylab("Brexit Mentions")
+ggplot(data=FinalData[,c('Date','WordCount')],aes(x=Date, y= WordCount))+geom_line(aes(x="Date, y="ArticleCount")) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Time")+ylab("Brexit Mentions")
+ggplot(data=FinalData[,c('Date','WordCount')],aes(x=Date, y= WordCount))+geom_line(aes(x="Date, y="ArticleCount",colour="red")) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Time")+ylab("Brexit Mentions")
+ggplot()+geom_line(aes(x=FinalData$Date, y= FinalData$WordCount))+geom_line(aes(x=FinalData$Date, y=FinalData$ArticleCount,colour="red")) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Time")+ylab("Brexit Mentions")
+ggplot()+geom_line(aes(x=FinalData$Date, y= FinalData$WordCount),colour="Brexit Mentions")+geom_line(aes(x=FinalData$Date, y=FinalData$ArticleCount,colour="Article Count")) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Date")+ylab("Count")
+ggplot()+geom_line(aes(x=FinalData$Date, y= FinalData$WordCount),colour="blue")+geom_line(aes(x=FinalData$Date, y=FinalData$ArticleCount,colour="red")) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Date")+ylab("Count")
+ggplot()+geom_line(aes(x=FinalData$Date, y= FinalData$WordCount),colour="blue")+geom_line(aes(x=FinalData$Date, y=FinalData$ArticleCount,colour="red")) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Date")+ylab("Count")+ scale_fill_discrete(#
+                         breaks=c("BM", "AC"),#
+                         labels=c("Brexit Mentions", "Article Count"))
+ggplot()+geom_line(aes(x=FinalData$Date, y= FinalData$WordCount))+geom_line(aes(x=FinalData$Date, y=FinalData$ArticleCount)) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Date")+ylab("Count")+ scale_fill_discrete(#
+                         breaks=c("BM", "AC"),#
+                         labels=c("Brexit Mentions", "Article Count"))
+ggplot()+geom_line(data=FinalData,aes(x=Date, y= WordCount,colour='blue'))+geom_line(aes(x=Date, y=ArticleCount,colour='red')) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Date")+ylab("Count")
+ggplot()+geom_line(data=FinalData,aes(x="Date", y= "WordCount",colour='blue'))+geom_line(aes(x="Date", y="ArticleCount",colour='red')) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Date")+ylab("Count")
+ggplot()+geom_line(data=FinalData,aes(x=Date, y= WordCount,colour='blue'))+geom_line(data=FinalData,aes(x=Date, y=ArticleCount,colour='red')) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Date")+ylab("Count")
+ggplot()+geom_line(data=FinalData,aes(x=Date, y= WordCount,colour='blue'))+geom_line(data=FinalData,aes(x=Date, y=ArticleCount,colour='red')) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Date")+ylab("Count")+scale_color_discrete(labels = c("Brexit Mentions", "Brexit Articles"))
+ggplot()+geom_line(data=FinalData,aes(x=Date, y= WordCount,colour='blue'))+geom_line(data=FinalData,aes(x=Date, y=ArticleCount,colour='red')) + labs(title = "Number of times Brexit mentioned in articles published by the Times of Malta")+xlab("Date")+ylab("Count")+scale_color_discrete(name="Type",labels = c("Brexit Mentions", "Brexit Articles"))
+ggplot()+geom_line(data=FinalData,aes(x=Date, y= WordCount,colour='blue'))+geom_line(data=FinalData,aes(x=Date, y=ArticleCount,colour='red')) + labs(title = "Number of times Brexit mentioned vs Number of Brexit articles published by the Times of Malta")+xlab("Date")+ylab("Count")+scale_color_discrete(name="Type",labels = c("Brexit Mentions", "Brexit Articles"))
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+rm(list = ls())
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+FinalData=CurrencyDataClean(GBPEUR)
+OverallCorrelation(FinalData)#
+CumulativeCorrelation(FinalData)#
+WindowCorrelation(FinalData)#
+AutoFinalDataCorrelation(FinalData)
+AbnormalReturns(GBPUSD,"2016-06-24",100,-5,5,30)
+TopicExtraction('2016-06-24',-5,5,2)
+WCARdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" ,"2018-11-29", "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23")#
+#
+#Testing these dates for other exchange rates#
+for (i in as.character(WCARdatelist)){#
+	if (i %in% GBPUSD$Date){#
+		AbnormalReturns(GBPUSD,i,150,-5,5,30)#
+	}#
+}
+WCdatelist=c("2016-04-07", "2016-05-25", "2016-06-09", "2016-06-24", "2016-07-28", "2016-10-14", "2016-12-07", "2016-12-15", "2017-01-18", "2017-01-23", "2017-03-29", "2017-05-30", "2017-07-24", "2017-10-17", "2017-11-20", "2017-11-30", "2018-07-13" ,"2018-11-27", "2018-12-04","2018-12-31", "2019-01-03", "2019-01-15", "2019-01-30")#
+#
+#To identify dates at which there was a significant change in the exchange rate#
+for (i in as.character(WCdatelist)){#
+	AbnormalReturns(GBPEUR,i,150,-5,5,30)#
+}
+Top5AC=quantile(FinalData$ArticleCount, probs = 0.95)#
+TFdatelist=FinalData[FinalData$ArticleCount> Top5AC,]$Date#
+#
+#Running the abnormal returns on those dates#
+for (i in as.character(TFdatelist)){#
+	AbnormalReturns(GBPEUR,i,150,-5,5,30)#
+}
+TFARdatelist=c("2016-06-20", "2016-06-24", "2016-06-27", "2016-07-01", "2018-12-10", "2019-01-14", "2019-01-23" ,"2019-02-26", "2019-03-20", "2019-03-22")#
+#
+#Testing these dates for other exchange rates#
+for (i in as.character(TFARdatelist)){#
+	if (i %in% GBPUSD$Date){#
+		AbnormalReturns(GBPEUR,i,150,-5,5,30)#
+	}#
+}
+LDAdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" , "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23","2019-02-26", "2019-03-20", "2019-03-22")#
+TopicAnalysis(LDAdatelist)
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+FinalData=CurrencyDataClean(GBPEUR) #Select whichever currency you wish
+OverallCorrelation(FinalData)
+head(FinalData)
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+OverallCorrelation(FinalData)
+FinalData=CurrencyDataClean(GBPEUR) #Select whichever currency you wish
+OverallCorrelation(FinalData)
+LDAdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" , "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23","2019-02-26", "2019-03-20", "2019-03-22")#
+TopicAnalysis(LDAdatelist)
+library(tm)
+LDAdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" , "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23","2019-02-26", "2019-03-20", "2019-03-22")#
+TopicAnalysis(LDAdatelist)
+library(dplyr)
+LDAdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" , "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23","2019-02-26", "2019-03-20", "2019-03-22")#
+TopicAnalysis(LDAdatelist)
+library(NLP)
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+FinalData=CurrencyDataClean(GBPEUR) #Select whichever currency you wish
+OverallCorrelation(FinalData)
+WindowCorrelation(FinalData)
+AbnormalReturns(GBPUSD,"2016-06-24",100,-5,5,30)
+TopicExtraction('2016-06-24',-5,5,2)
+LDAdatelist=c("2016-05-24" ,"2016-06-01","2016-06-06","2016-06-20", "2016-06-24", "2016-06-27", "2016-10-07" ,"2016-12-01" ,"2016-12-09",  "2017-01-25", "2017-07-18", "2017-07-21", "2017-10-13" ,"2017-11-29" , "2018-12-10", "2018-12-31", "2019-01-02", "2019-01-14", "2019-01-23","2019-02-26", "2019-03-20", "2019-03-22")#
+TopicAnalysis(LDAdatelist)
+source("/Users/michaelfilletti/Desktop/Uni/AI/Data Science/Assignment/Scripts/Solutionv3.R")#
+source("Solutionv32.R")#
+source("Solutionv33.R")#
+source("Solutionv34.R")
+FinalData=CurrencyDataClean(GBPEUR)
+corr=integer(835)#
+for (i in 2:836) {#
+	MAcorr=running(FinalData$Value[2:i], FinalData $WordCount[2:i], fun=cor, width=i-2+1)#
+	corr[i-1]=mean(as.vector(MAcorr),na.rm=TRUE)#
+}
+ggplot()+geom_line(aes(x=corr,colour='blue'))+ labs(title = "Cumulative Correlation of GBP/EUR Exchange Rate")+xlab("Cumulative Days")+ylab("Correlation")
+ggplot()+geom_line(aes(y=corr,colour='blue'))+ labs(title = "Cumulative Correlation of GBP/EUR Exchange Rate")+xlab("Cumulative Days")+ylab("Correlation")
+ggplot()+geom_line(aes(corr,colour='blue'))+ labs(title = "Cumulative Correlation of GBP/EUR Exchange Rate")+xlab("Cumulative Days")+ylab("Correlation")
+corr
+ggplot()+geom_line(aes(y=corr,x=c(1:len(corr)),colour='blue'))+ labs(title = "Cumulative Correlation of GBP/EUR Exchange Rate")+xlab("Cumulative Days")+ylab("Correlation")
+ggplot()+geom_line(aes(y=corr,x=c(1:length(corr)),colour='blue'))+ labs(title = "Cumulative Correlation of GBP/EUR Exchange Rate")+xlab("Cumulative Days")+ylab("Correlation")
+w=11#
+mincorr=0.602 #The critical value of the Pearson correlation for 90% significance and 8 DoF (since d=n-2)#
+#
+#Approach 1 - Running the correlation test of  our GBP/EUR rate against the number of times the term appears#
+MAcorr=running(FinalData$Value, FinalData $WordCount, fun=cor, width=w)#
+corr=as.vector(MAcorr)
+ggplot()+geom_line(aes(y=corr,x=c(1:length(corr)),colour='blue'))+ labs(title = "11-Day Window Correlation of GBP/EUR Exchange Rate")+xlab("Windows")+ylab("Correlation")+ geom_hline(yintercept=mincorr, linetype="dashed", color = "red")+ geom_hline(yintercept=-mincorr, linetype="dashed", color = "red")
+ggplot()+geom_line(aes(y=corr,x=c(1:length(corr)),colour='darkblue'))+ labs(title = "11-Day Window Correlation of GBP/EUR Exchange Rate")+xlab("Windows")+ylab("Correlation")+ geom_hline(yintercept=mincorr, linetype="dashed", color = "red")+ geom_hline(yintercept=-mincorr, linetype="dashed", color = "red")
+ggplot()+geom_line(aes(y=corr,x=c(1:length(corr)),color='darkblue'))+ labs(title = "11-Day Window Correlation of GBP/EUR Exchange Rate")+xlab("Windows")+ylab("Correlation")+ geom_hline(yintercept=mincorr, linetype="dashed", color = "red")+ geom_hline(yintercept=-mincorr, linetype="dashed", color = "red")
+ggplot()+geom_line(aes(y=corr,x=c(1:length(corr)),color='blue'))+ labs(title = "11-Day Window Correlation of GBP/EUR Exchange Rate")+xlab("Windows")+ylab("Correlation")+ geom_hline(yintercept=mincorr, linetype="dashed", color = "red")+ geom_hline(yintercept=-mincorr, linetype="dashed", color = "red")
+ggplot()+geom_line(aes(y=corr,x=c(1:length(corr))))+ labs(title = "11-Day Window Correlation of GBP/EUR Exchange Rate")+xlab("Windows")+ylab("Correlation")+ geom_hline(yintercept=mincorr, linetype="dashed", color = "red")+ geom_hline(yintercept=-mincorr, linetype="dashed", color = "red")
