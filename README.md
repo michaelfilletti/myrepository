@@ -26,8 +26,14 @@ While at Uniblue I worked a lot on funnels and identifying any potential drops o
 
 - Support Vector Regression from scratch (without packages)
 
+- Logistic Regression from scratch (without packages)
+
 - Predicting Bankruptcy using News Articles and Financial Data
 
 - Classifying Sportsbook Customers using Gaussian Process Classification
 
 - Football Game Predictor
+
+- Investigating the impact Brexit had on the GBP/EUR exchange rate
+
+- SciPi: Creating a big data tool (using Apache Spark & Graphframes) to allows users better understand topics and keywords
