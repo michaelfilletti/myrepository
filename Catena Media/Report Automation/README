@@ -1,0 +1,11 @@
+REPORT AUTOMATION
+
+This was required to transform raw data from NS and operator backends (pasted to Google Sheets) to our in-house format, whilst also updating data in our reports:
+- Weekly Report
+- Player Report
+- Tracker Report
+
+NSDataTransformer1 - Converts output of NS to a useful format
+WeeklyReportBaybets - Converts data from NS and BE to our in-house format and merges the data
+TrackerReportBaybets - Converts data from NS to our in-house format
+TrackerReportBackendBaybets - Converts data from BE to our in-house format
