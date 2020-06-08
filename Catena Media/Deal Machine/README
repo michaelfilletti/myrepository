@@ -1,5 +1,1 @@
 Deal Machine: This is a tool that I built to evaluate the deals we have in place with various operators, so as to find the most profitable deal for both parties
-
-PlayerDatabaseGenerator.py: Script that converts the cleaned and transformed player data extracted from multiple operators (that provide it) to a player database, containing the relevant info of all players over the past X months
-
-2019RevenuesForecaster.py: Script that uses the obtained database to forecast revenues of the types of players, so as to evaluate the deals in place and make comparisons
